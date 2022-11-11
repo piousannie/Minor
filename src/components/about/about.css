@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&family=Fira+Sans+Extra+Condensed&family=Poppins:wght@100;400;500;700&display=swap');
+
 .container{
     display: flex;
-    height: min-content;
     justify-content: space-around;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    flex: auto;
 }
+
 .image{
     display: flex;
-    height: 70vh;
+    height: 60vh;
     width: auto;
     padding: 1rem;
     float: left;
@@ -15,17 +22,6 @@
 
 }
 
-.btnAbt{
-    display: flex;  
-    font-family:'Fira Sans Extra Condensed','Courier New', Courier, monospace;
-    font-weight: 400;
-    font-size: 1.2rem;
-    background-image: linear-gradient(-225deg, #650183 0%,  #00bdf7 100%);
-    margin-left: 3rem;
-    padding: auto;
-    text-decoration: none;
-    color: white;
-}
 
 .buttonTab{
     display: flex;
@@ -43,5 +39,5 @@
 }
 
 .aboutHead{
-    font-size: 4rem;
+    font-size: 3rem;
 }

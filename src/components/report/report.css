@@ -1,11 +1,22 @@
+
+#result_test{
+    font-size: 37.5px;
+}
+
+
 .uploadImageContainer{
     padding: 2rem;
     border: 0.2rem solid black;
-    width: max-content;
+    width: 1000px;
+    height: 400px;
     margin-left:2rem;
     margin-top: 2rem;
     border-radius: 0.5rem;
+    align-items: center;
+}
 
+.class_smth{
+    font-size: 30px;
 }
 
 .uploadimg{
@@ -22,10 +33,17 @@ h2{
 }
 
 .reportgen{
+    align-items: center;
+}
+
+.reportgen{
     display: flex;
     padding: 1rem;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: space-around;
 }
+
 .result{
     padding: 2rem;
     border: 0.2rem solid black;
