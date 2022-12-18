@@ -18,13 +18,6 @@ function Search() {
 
   };
 
-  const rand1 = Math.random()*30 + 65;
-  const rand2 = 95 - rand1;
-  const rand3 = (Math.random()*5) + 1;
-  const rand4 = 6 - rand3;
-  const rand5 = Math.random() /100;
-
-
 
   
   return (
@@ -35,15 +28,11 @@ function Search() {
           searchParams.get("Upload Image") ? (
             <div className="uploadImageContainer class_smth">
               <p>
-                Class 0: {rand1.toFixed(5)} % <br />
-                Class 1: {rand2.toFixed(5)} % <br />
-                Class 2: {rand3.toFixed(5)} % <br />
-                Class 3: {rand4.toFixed(5)} % <br />
-                Class 4: {rand5.toFixed(5)} % <br />
+                numbers and shit here
               </p>
               <br />
               <div id="result_test">
-                You belong to Class 0, You are Safe!
+                are you safe
               </div>
             </div>
           ) : (

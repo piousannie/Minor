@@ -2,8 +2,9 @@ import "./App.css";
 import Navbar from "./components/navbar/navbar";
 import About from "./components/about/about";
 import Search from "./components/report/report";
+import LoginForm from './components/LoginForm/LoginForm';
+import Info from './components/Info/Info';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Database from "./components/database/db";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
             }
           />
           <Route path="/Report" element={<Search />} />
-          <Route path="/database" element={<Database />} />
+          <Route path="/login" element={<LoginForm />} />
+          <Route path="/info" element={<Info />} />
         </Routes>
       </BrowserRouter>
     </>
