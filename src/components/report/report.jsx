@@ -28,11 +28,15 @@ function Search() {
           searchParams.get("Upload Image") ? (
             <div className="uploadImageContainer class_smth">
               <p>
-                numbers and shit here
+                Class 0: 100 % <br />
+                Class 1: 0 % <br />
+                Class 2: 0 % <br />
+                Class 3: 0 % <br />
+                Class 4: 0 % <br />
               </p>
               <br />
               <div id="result_test">
-                are you safe
+                You belong to Class 0, You are Safe!
               </div>
             </div>
           ) : (

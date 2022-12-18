@@ -1,6 +1,6 @@
 from flask import Flask, request
 from flask_cors import CORS, cross_origin
-import smtplib
+
 
 app = Flask(__name__)
 cors = CORS(app)
@@ -9,38 +9,17 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 
 @app.route("/login", methods=["POST"])
+@cross_origin()
 def login():
-    dict = request.json
-    return str(response)
+    print(request.json)
+    return "0"
 
 
-@app.route("/signup", methods=["POST"])
+@app.route("/upload", methods=["POST"])
 @cross_origin()
 def signup():
-    dict = request.json
-    return "1" if response else "0"
-
-
-@app.route("/doc-upload", methods=["POST"])      # user aploading a new document
-def doc_upload():
-    dict = request.json
-    return 0
-
-
-@app.route("/fetch-admin", methods=["GET"])
-def fetch_admin():
-    return 
-
-
-@app.route("/file/<username>", methods=["GET"])
-def user(username):
-    return 0
-
-
-@app.route("/status-update", methods=["POST"])
-def admin_status_update():
-    dict = request.json
-    return '1'
+    print(request.json)
+    return "0"
 
 
 @app.route("/")
